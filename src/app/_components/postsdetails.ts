@@ -15,6 +15,7 @@ export class PostsDetailsComponent {
   public message: string;
   //public values: any[];  
   public news = new Post();
+  // this url should be in a constant file so on change it will be updated everywhere
   private liveURL = "https://jsonplaceholder.typicode.com/posts/";
   private serviceURL = "";
   private postId;
