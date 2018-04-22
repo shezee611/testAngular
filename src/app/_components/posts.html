@@ -1,0 +1,4 @@
+Search: <input [(ngModel)]="searchText" placeholder="search text goes here">
+<div *ngFor="let news of values | searchNewsPipe : searchText">
+  <div><a routerLink="/posts/{{news.id}}/{{news.title | spaceToHyphen}}">{{news.id}} - {{news.title | capitalize}}</a></div>
+</div>
